@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  min-height: 100vh; /* Use min-height instead of height */
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #bde4ff;
+  width: 100%; /* Ensure header takes full width */
+}
+
+/* Keep the rest of your existing CSS as is */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shield {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+/* Make the snowflake white */
+.snowflake {
+  font-size: 24px;
+  color: white;
+}
+
+/* Brand name next to snowflake */
+.brand-name {
+  font-size: 24px;
+  color: rgb(13, 22, 56);
+  margin: 0;
+}
+
+/* Right-aligned buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Both buttons */
+.login,
+.sign-up-button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Blue background for sign-up */
+.sign-up-button {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Transparent login button */
+.login {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
