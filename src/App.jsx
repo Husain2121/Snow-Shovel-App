@@ -1,23 +1,21 @@
+import "./App.css";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import { Routes, Route } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import './App.css'
+
 
 function App() {
   return (
-    <div className="app">
-      <header className="logo-header">
-        <div className="brand">
-          <div className="shield">
-            <span className="snowflake">❄️</span>
-          </div>
-          <h1 className="brand-name">WinterShield</h1>
-        </div>
-        <div className="auth-buttons">
-          <button className="login">Log In</button>
-          <button className="sign-up-button">Sign Up</button>
-        </div>
-      </header>
-    </div>
-  )
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
