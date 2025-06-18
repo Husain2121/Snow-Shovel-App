@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Customer() {
 
-
+ const test = 22
 
 
 }
