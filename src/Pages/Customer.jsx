@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 
 function Customer() {
+    const items = [items, setitems];
 
 
 
