@@ -62,7 +62,7 @@ function Home() {
                             <span className="description-p1">quickly and reliably.</span>
                         </p>
                         <div className="option-buttons">
-                            <button className="shovelling">I need shovelling</button>
+                            <button className="shovelling" onClick={() => navigate("customer")}>I need shovelling</button>
                             <button className="shoveler">I want to shovel</button>
                         </div>
                     </div>
