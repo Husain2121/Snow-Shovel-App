@@ -11,14 +11,15 @@ import { Link } from "react-router-dom";
 import useLocalStorage from '../Components/useLocalStorage';
 function Customer() {
 
-    let [value, setValue] = useState('')
+    let [value, setValue] = useLocalStorage('name', '')
     return (
         <>
             <h1 className="customer-header">Fast Snow Removal. Anytime.</h1>
             <div className="customer-requests">
                 <form action="" className="requests">
                     <div className="input-address">
-                        <input type="address" placeholder="Address" className="address-form" required onChange={(event) => setValue(event.target.value)} value={value} />
+                        <input type="address" placeholder="Address" className="address-form"
+                            required onChange={(event) => setValue(event.target.value)} value={value} />
                     </div>
                     {/* value will have a input, that will be updated with new additions */}
                     <div className="input-">
