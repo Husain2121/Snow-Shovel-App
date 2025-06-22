@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 import React, { useState } from 'react';
 import './Customer.css'
 import { ArrowLeft } from "lucide-react";
@@ -38,4 +36,3 @@ function Customer() {
 }
 
 export default Customer;
->>>>>>> new

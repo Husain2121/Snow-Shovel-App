@@ -29,7 +29,7 @@ function getSavedValue(key, initialValue) {
 export default function useLocalStorage(key, initialValue) {
 
     let [value, setValue] = useState(() => {
-        return getSaveValue(key, initialValue) // every time we refresh the page, this function gets activated(called once)
+        return getSavedValue(key, initialValue) // every time we refresh the page, this function gets activated(called once)
         // either returns an empty string or whatever we saved previously. value either gets assigned savedValue or initialValue.
         //then this gets assigned to the input which is how the state is retained on page refresh
     });
@@ -38,7 +38,7 @@ export default function useLocalStorage(key, initialValue) {
     // the useEffect gets triggered at the end of every render cycle. allows to call side effects like 
     // saving data to local storage
 
-    useStorage(() => {
+    useEffect(() => {
         // The setItem() method of the Storage interface, when passed a key name and value, 
         // will add that key to the given Storage object, or update that key's value if it already exists.
 
