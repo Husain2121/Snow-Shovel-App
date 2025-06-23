@@ -1,4 +1,85 @@
+/* Customer.css */
+
 .customer-header {
-    font-size: large;
-    color: black;
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.customer-requests {
+    display: flex;
+    /* Use flexbox to center content */
+    justify-content: flex-start;
+    /* Aligns items to the start (left) */
+    align-items: center;
+    /* Centers items vertically */
+    min-height: calc(100vh - 150px);
+    /* Adjust height, assuming header takes some space */
+    padding-left: 20%;
+    /* Pushes the content to the right, making it appear left of center */
+    box-sizing: border-box;
+    /* Include padding in the element's total width and height */
+}
+
+.requests {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    /* Fixed width for the form */
+    display: flex;
+    flex-direction: column;
+    /* Stack form elements vertically */
+    gap: 20px;
+    /* Space between form elements */
+}
+
+.input-address,
+.input-datetime,
+.input-snow-depth {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.address-form {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    /* Ensures padding doesn't add to the width */
+}
+
+.address-form:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+    /* Aligns button to the right within the form */
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
 }
