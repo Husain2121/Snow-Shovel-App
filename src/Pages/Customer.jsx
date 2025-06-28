@@ -22,20 +22,25 @@ function Customer() {
 
     return (
         <>
-            {/* This is the top hero section */}
             <div className="customer-hero">
-                <h1 className="customer-header">Fast Snow Removal. Anytime.</h1>
-                <p className="customer-subtext">Request snow shoveling in seconds.</p>
-                <button className="request-now" onClick={handleScrollToForm}>
+                <div className="customer-header-cont">
+                    <h1 className="customer-header">Fast Snow Removal. Anytime.</h1>
+                </div>
+                <div className="customer-subtext-cont">
+                    <p className="customer-subtext">Request snow shoveling in seconds.</p>
+                </div>
+                <div className="customer-request-btn">  <button className="request-now" onClick={handleScrollToForm}>
                     Request Now
                 </button>
+                </div>
+
             </div>
 
             {/* This is the request form section */}
-            <div className="customer-requests" ref={formRef}>
+            <div className="customer-requests-cont"> <div className="customer-requests" ref={formRef}>
                 <form className="requests" onSubmit={handleSubmit}>
                     <div className="input-address">
-                        <label htmlFor="address">Address:</label>
+                        <label htmlFor="address">Address: </label>
                         <input
                             type="text"
                             id="address"
@@ -48,7 +53,7 @@ function Customer() {
                     </div>
 
                     <div className="input-datetime">
-                        <label htmlFor="datetime">Date & Time:</label>
+                        <label htmlFor="datetime">Date & Time: </label>
                         <input
                             type="datetime-local"
                             id="datetime"
@@ -60,12 +65,12 @@ function Customer() {
                     </div>
 
                     <div className="input-snow-depth">
-                        <label htmlFor="snow-depth">Snow Depth (inches):</label>
+                        <label htmlFor="snow-depth">Snow Depth (inches): </label>
                         <select
                             id="snow-depth"
                             className="address-form"
                             required
-                            onChange={(event) => setSnowDepth(event.target.value)}
+                            onChange={(event) => setSnowDepth(event.target.value)} // when value is changed, it will get updated by this.
                             value={snowDepth}
                         >
                             <option value="">Select Depth</option>
@@ -80,6 +85,8 @@ function Customer() {
                     <button type="submit" className="submit-button">Request Snow Removal</button>
                 </form>
             </div>
+            </div>
+
         </>
     );
 }
