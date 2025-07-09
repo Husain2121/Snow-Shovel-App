@@ -1,13 +1,43 @@
-# React + Vite
+# ❄️ Snow Shoveling Service App - WinterSheild
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack-ready web application that connects users requesting snow removal with local shovelers. Designed with scalability, responsiveness, and clean architecture in mind, this platform simulates real-time service workflows and prepares for production deployment.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Customer Experience**
+  - Intuitive UI to request snow removal within seconds
+  - Location-based service matching (future-ready)
+  - Real-time form handling with validation
 
-## Expanding the ESLint configuration
+- **Shoveler Experience**
+  - Sign up and view incoming job requests
+  - Availability management (planned)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Snow-Shovel-App
+- **Dynamic Workflow**
+  - Interactive forms and modular components
+  - Responsive layouts for mobile and desktop
+
+## 🛠️ Tech Stack
+
+| Frontend          | Styling         | Tooling / Build       |
+|-------------------|-----------------|------------------------|
+| React (v19)       | Tailwind CSS    | Vite                   |
+| JavaScript (ES6+) | PostCSS         | ESLint                 |
+
+Future backend integration is planned using:
+- Node.js + Express
+- MongoDB or PostgreSQL
+- WebSockets (for live job updates)
+
+## 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/Husain2121/snow-shoveling-app.git
+cd snow-shoveling-app
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
